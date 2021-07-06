@@ -1,4 +1,4 @@
-# HTML and CSS Only (with very little js)
+# Custom Porfolio Website
 
-My first portfolio project using only HTML and CSS
+Using HTML, CSS and JS
 

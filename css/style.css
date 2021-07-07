@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Custom properties, update these for your own design */
+/* Custom properties */
 :root {
     --ff-primary: 'Lora', serif;
     --ff-secondary: 'Roboto Slab', serif;
@@ -13,8 +13,8 @@
     --fw-bold: 700;
 
     --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #66d2de;
+    --clr-dark: #353535;
+    --clr-accent: #24acc4;
 
     --fs-h1: 3rem;
     --fs-h2: 2.50rem;
@@ -99,9 +99,16 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section__subtitle--work {
-    color: var(--clr-accent);
+    background: var(--clr-accent);
+    /* color: var(--clr-accent); */
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    /* margin-bottom: 1;
+    font-size: var(--fs-h3); */
+    /* color: var(--clr-accent);
     font-weight: var(--fw-bold);
-    text-align: 2em;
+    text-align: 2em; */
 }
 
 /* header */
@@ -162,9 +169,7 @@ header {
     z-index: 1000;
 }
 
-
-
-/* js portion */
+/* javascript */
 
 .nav-open .nav {
     transform: translateX(0);
@@ -185,9 +190,6 @@ header {
 .nav-open .hamburger::after {
     opacity: 0;
 }
-
-
-
 
 .hamburger {
     display: block;
@@ -214,7 +216,6 @@ header {
 
 .hamburger::before { top: 6px; }
 .hamburger::after {bottom: 6px; }
-
 
 /* Intro Section */
 
@@ -317,8 +318,8 @@ header {
 }
 
 .my-work {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;
 }
 
@@ -350,10 +351,10 @@ header {
 /* footer */
 
 .footer {
-    background: #111;
+    background: var(--clr-dark);
     color: var(--clr-accent);
     text-align: center;
-    padding: 2.5em 0;
+    padding: 1.75em 0;
     font-size: var(--fs-h3);
 }
 
@@ -379,7 +380,7 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
+    margin: 1em 0 0;
     padding: 0;
 }
 
